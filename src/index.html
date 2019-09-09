@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+
+  <script type="module" src="/build/nest-comps.esm.js"></script>
+  <script nomodule src="/build/nest-comps.js"></script>
+
+</head>
+<body>
+  <az-tree>
+  </az-tree>
+  <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', async () => {
+      const tree = document.querySelector('az-tree');
+      await tree.addItem('root1');
+      await tree.addItem('item1');
+      await tree.addItem('item2');
+    });
+  </script>
+</body>
+</html>
